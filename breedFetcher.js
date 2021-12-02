@@ -2,7 +2,7 @@ const request = require("request");
 const { argv } = require("process");
 
 const breedName = argv.slice(2)[0];
-const url = `https://api.thecatapi.con/v1/breeds/search?q=${breedName}`;
+const url = `https://api.thecatapi.com/v1/breeds/search?q=${breedName}`;
 
 request(url, (error, response, body) => {
   //if the page or the link is not found
